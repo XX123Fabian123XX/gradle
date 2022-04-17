@@ -7,6 +7,12 @@ on:
   workflow_dispatch:
 
 jobs:
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+     - run: echo "start des programmes"
+     - run: gradle run
+     - run: echo "ende des programmes"
   job1:
     runs-on: ubuntu-latest
     steps:
